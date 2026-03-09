@@ -1,7 +1,7 @@
 {
   "name": "GADIS QS HQ",
   "short_name": "GADIS HQ",
-  "start_url": "/gadisqs/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fff0f5",
   "theme_color": "#d4af37",
