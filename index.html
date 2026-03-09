@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GADIS QS HQ Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#d4af37">
+</head>
+<body>
+
+<header>GADIS QS HQ - Dashboard Interaktif</header>
+
+<div class="counter">
+  <div>Total Kod: <span id="totalKod">0</span></div>
+  <div>Ditebus: <span id="totalDitebus">0</span></div>
+  <div>Belum Ditebus: <span id="totalBelum">0</span></div>
+</div>
+
+<div id="map"></div>
+<div class="ticker" id="ticker"></div>
+
+<div style="text-align:center; margin:20px;">
+  <input type="text" id="kodInput" placeholder="Masukkan Kod Siri"/>
+  <button id="checkBtn">Semak Kod</button>
+</div>
+
+<div class="scanLine" id="scanLine"></div>
+<div class="result" id="result"></div>
+<img src="assets/stamp.png" class="stamp" id="stamp"/>
+
+<audio id="audioSah" src="assets/applause.mp3"></audio>
+<audio id="audioAktif" src="assets/beep.mp3"></audio>
+<audio id="audioInvalid" src="assets/beep.mp3"></audio>
+
+<canvas id="chartStats" width="600" height="200"></canvas>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
