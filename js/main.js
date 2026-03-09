@@ -52,7 +52,25 @@ document.getElementById("checkBtn").addEventListener("click",async ()=>{
   const res = await fetch(API+"?kod="+kod);
   const data = await res.json();
   const resultEl = document.getElementById("result");
-  const stamp = document.getElementById("stamp");
+  const stampSah = document.getElementById("stampSah");
+  const stampAktif = document.getElementById("stampAktif");
+  const audioSah = document.getElementById("audioSah");
+  const audioAktif = document.getElementById("audioAktif");
+
+if(data.success){
+  if(data.status=="TELAH DITEBUS"){
+    stampSah.classList.add("fall");
+    stampAktif.classList.remove("fall");
+    audioSah.play();
+  } else if(data.status=="AKTIF"){
+    stampAktif.classList.add("fall");
+    stampSah.classList.remove("fall");
+    audioAktif.play();
+  }
+} else {
+  stampSah.classList.remove("fall");
+  stampAktif.classList.remove("fall");
+}
 
   // Scan animation
   document.getElementById("scanLine").classList.add("active");
