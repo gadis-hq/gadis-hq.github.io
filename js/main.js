@@ -1,3 +1,5 @@
+const API = "https://script.google.com/macros/s/AKfycbzzE1MZSWJKvis8_DsJ9wKJMEj3jXXsuMHAYv77L4r5PxRbbh6WpnBnx_W_8IFtlEMh/exec";
+
 import QRCode from 'https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js';
 
 const API = "https://script.google.com/macros/s/AKfycbx.../exec"; // Gantikan dengan API awak
